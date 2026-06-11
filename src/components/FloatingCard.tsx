@@ -1,4 +1,11 @@
-export default function FloatingCard({ icon, text1, text2, className }) {
+import type  { ReactNode } from "react";
+interface FloatingCardProps {
+  icon: ReactNode;
+  text1: string;
+  text2: string;
+  className?: string;
+}
+export default function FloatingCard({ icon, text1, text2, className }: FloatingCardProps) {
   return (
     <div
       className={`
