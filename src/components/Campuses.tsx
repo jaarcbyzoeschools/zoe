@@ -197,22 +197,6 @@ export default function Campuses(){
                   {campus.campus}
                 </h3>
 
-                <motion.div
-                  initial={{
-                    opacity: 0,
-                  }}
-                  whileHover={{
-                    opacity: 1,
-                  }}
-                  className="
-                    mt-3
-                    text-sm
-                    font-medium
-                    text-emerald-300
-                  "
-                >
-                  Explore Campus →
-                </motion.div>
               </div>
             </motion.div>
           ))}

@@ -1,18 +1,36 @@
-import './App.css'
-import Campuses from './components/Campuses'
-import Hero from './components/Hero'
-import WhyChoose from './components/WhyZoe'
+import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Admissions from './pages/Admissions';
+
 
 function App() {
 
-
   return (
-    <>
-          <Hero />
-          <WhyChoose />
-          <Campuses />
-    </>
+    <BrowserRouter>
+
+      <Routes>
+
+        {/* Redirect homepage */}
+        {/* <Route 
+          path="/" 
+          element={<Navigate to="/admissions" replace />} 
+        /> */}
+
+
+        {/* Admissions page */}
+        <Route 
+          path="/" 
+          element={<Admissions />} 
+        />
+
+
+      </Routes>
+
+    </BrowserRouter>
   )
+
 }
 
-export default App
+
+export default App;

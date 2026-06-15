@@ -10,6 +10,7 @@ import heroCircles from "/heroCircles.png";
 import type { Variants } from "framer-motion";
 
 
+
 const features: string[] = [
   "Day & Boarding Facilities",
   "Nursery, Primary & College",
@@ -101,6 +102,7 @@ export default function Hero(){
                   We don&apos;t just teach, we TRAIN.
                 </motion.p>
 
+                  <a target="blank" href="https://zoe.edossier.app/admission/#/signin">
                 <motion.button
                   whileHover={{
                     scale: 1.05,
@@ -111,10 +113,12 @@ export default function Hero(){
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.6 }}
-                  className="mt-8 bg-[#00563f] text-white rounded-md px-10 py-4 font-medium shadow-lg"
+                  className="mt-8 bg-[#00563f] cursor-pointer text-white rounded-md px-10 py-4 font-medium shadow-lg"
                 >
                   APPLY FOR ADMISSION
                 </motion.button>
+                  </a>
+
               </div>
             </div>
           </motion.div>
@@ -125,15 +129,17 @@ export default function Hero(){
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
-            className="relative flex justify-center items-center min-h-[420px]"
+            className="relative max-w-[500px] mx-auto flex justify-center items-center min-h-[420px]"
           >
-            <img
+            <div >            
+              
+              <img
               src={heroCircles}
               alt=""
               className="absolute -right-40 -bottom-35 w-[380px] pointer-events-none select-none opacity-70"
             />
 
-            <div className="absolute w-[350px] h-[350px] left-[30px] rounded-full bg-white border border-emerald-900" />
+            <div className="absolute w-[350px] h-[350px] -left-[20px] rounded-full bg-white border border-emerald-900" />
 
             <motion.div
               animate={{
@@ -159,7 +165,7 @@ export default function Hero(){
               icon={<BookOpen size={18} />}
               text1="Fully Equipped"
               text2="Classroom"
-              className="left-0 top-[45%] z-50"
+              className="-left-10 top-[45%] z-50"
             />
 
             <FloatingCard
@@ -175,6 +181,8 @@ export default function Hero(){
               text2="Teachers & Staff"
               className="right-0 bottom-12 z-50"
             />
+            </div>
+
           </motion.div>
         </div>
       </div>

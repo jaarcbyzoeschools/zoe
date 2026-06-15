@@ -4,8 +4,20 @@ import type { Variants } from "framer-motion";
 
 import FeatureCard from "./FeatureCard";
 
+type FeatureIcon =
+  | "calculator"
+  | "laptop"
+  | "atom"
+  | "palette"
+  | "music"
+  | "bus"
+  | "users"
+  | "heart"
+  | "car";
+
+
 interface Feature {
-  icon: string;
+  icon: FeatureIcon;
   title: string;
 }
 
@@ -221,7 +233,7 @@ export default function WhyChoose() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="bg-white rounded-3xl shadow-md p-8 w-full max-w-[400px]"
+            className="bg-white rounded-3xl shadow-md p-8 w-full max-full"
           >
             <h3 className="text-2xl font-bold mb-6">
               Admission Into:
