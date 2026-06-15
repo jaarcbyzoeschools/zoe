@@ -32,4 +32,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./dist/  # This targets your dist folder
-        server-dir: /public_html/zoe  # Change this if your site sits in a subfolder on Bluehost
+        server-dir: ./  # Change this if your site sits in a subfolder on Bluehost
