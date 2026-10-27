@@ -3,8 +3,6 @@ import { BookOpen, Laptop, Users } from "lucide-react";
 
 import FloatingCard from "./FloatingCard";
 import FeatureItem from "./FeatureItem";
-import student from "/images/students/Hero1.png";
-import heroCircles from "/images/other/heroCircles.png";
 import type { Variants } from "framer-motion";
 
 
@@ -54,7 +52,7 @@ export default function AdmissionHero(){
             className="relative w-full"
           >
             <img
-              src={heroCircles}
+              src="/images/other/heroCircles.png"
               alt=""
               className="absolute -left-40 top-14 w-[380px] pointer-events-none select-none opacity-70"
             />
@@ -125,7 +123,7 @@ export default function AdmissionHero(){
             <div >            
               
               <img
-              src={heroCircles}
+              src="/images/other/heroCircles.png"
               alt=""
               className="absolute -right-40 -bottom-35 w-[380px] pointer-events-none select-none opacity-70"
             />
@@ -144,7 +142,7 @@ export default function AdmissionHero(){
               className="relative z-20 w-[350px] h-[350px] bg-[#00563f] rounded-full"
             >
               <img
-                src={student}
+                src="/images/students/Hero1.png"
                 alt="Student"
                 className="w-[300px] lg:w-[290px] absolute left-6 object-cover rounded-full"
               />
